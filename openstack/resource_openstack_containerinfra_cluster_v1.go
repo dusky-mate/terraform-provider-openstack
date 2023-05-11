@@ -86,7 +86,7 @@ func resourceContainerInfraClusterV1() *schema.Resource {
 			"cluster_template_id": {
 				Type:        schema.TypeString,
 				Required:    true,
-				ForceNew:    true,
+				ForceNew:    false,
 				DefaultFunc: schema.EnvDefaultFunc("OS_MAGNUM_CLUSTER_TEMPLATE", nil),
 			},
 
